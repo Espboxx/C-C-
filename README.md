@@ -1,5 +1,8 @@
 # C/C++
 关于一些C++代码
+
+
+原贴：https://blog.csdn.net/xfgryujk/article/details/52739486
 ##D3DHOOK原理
 虚函数表hook
 要在D3D程序里绘制自己的东西一般要hook IDirect3DDevice9的EndScene函数，调用这个函数时原程序的绘制已经完成，可以轮到我们绘制了
@@ -254,17 +257,4 @@ HRESULT STDMETHODCALLTYPE MyCreateDevice(IDirect3D9* thiz, UINT Adapter, D3DDEVT
 
 	return res;
 }
-效果
-注意左上角出现了我们绘制的"Hello World"
-
-游戏修改器制作教程八：D3D函数hook
-
-游戏修改器制作教程八：D3D函数hook
-
-
-
-本章完整源码
-
-
-
 hook D3D函数可以实现在游戏中显示自己的UI（播放Bad Apple），或者在绘制某些东西的时候禁用Z轴缓冲实现透视
